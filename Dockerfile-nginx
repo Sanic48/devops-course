@@ -1,0 +1,10 @@
+FROM nginx:stable
+
+#copy file from local directory inside docker container 
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY index.html  /usr/share/nginx/html
+COPY entrypoint.sh entrypoint.sh
+
+
+ 
+
